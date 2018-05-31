@@ -41,7 +41,7 @@
 
 
 #define LED_RED 1
-#define LED_GREEN 6
+#define LED_GREEN 3
 #define LED_BLUE 4
 
 
@@ -89,6 +89,7 @@ int  SetPinsOut()
 	digitalWrite(LED_RED,LOW);
 	digitalWrite(LED_GREEN,LOW);
 	digitalWrite(LED_BLUE,LOW);
+	
 
 }
 int mymillis()
