@@ -21,6 +21,9 @@
     Software Foundation, Inc., 59 Temple Place - Suite 330, Boston,
     MA 02111-1307, USA
 */
+#include "shared.h"
+#include "touch.h"
+
 #define KWHT  "\x1B[37m"
 #define KYEL  "\x1B[33m"
 

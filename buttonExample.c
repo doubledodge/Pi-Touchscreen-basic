@@ -21,7 +21,7 @@
     Software Foundation, Inc., 59 Temple Place - Suite 330, Boston,
     MA 02111-1307, USA
 */
-
+/*
 #include <linux/input.h>
 #include <string.h>
 #include <fcntl.h>
@@ -30,6 +30,8 @@
 #include "touch.c"
 #include "framebuffer.c"
 #include <signal.h>
+*/
+#include "shared.h"
 #include <time.h>
 #include <stdlib.h>
 #include "wiringPi.h"

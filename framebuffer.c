@@ -25,7 +25,7 @@
 #include <linux/fb.h>
 #include <sys/mman.h>
 #include "font_8x8.c"
-
+#include "shared.h"
 
 #define KNRM  "\x1B[0m"
 #define KRED  "\x1B[31m"
@@ -45,25 +45,6 @@
 
 
 
-// default framebuffer palette
-typedef enum {
-  BLACK        =  0, /*   0,   0,   0 */
-  BLUE         =  1, /*   0,   0, 172 */
-  GREEN        =  2, /*   0, 172,   0 */
-  CYAN         =  3, /*   0, 172, 172 */
-  RED          =  4, /* 172,   0,   0 */
-  PURPLE       =  5, /* 172,   0, 172 */
-  ORANGE       =  6, /* 172,  84,   0 */
-  LTGREY       =  7, /* 172, 172, 172 */
-  GREY         =  8, /*  84,  84,  84 */
-  LIGHT_BLUE   =  9, /*  84,  84, 255 */
-  LIGHT_GREEN  = 10, /*  84, 255,  84 */
-  LIGHT_CYAN   = 11, /*  84, 255, 255 */
-  LIGHT_RED    = 12, /* 255,  84,  84 */
-  LIGHT_PURPLE = 13, /* 255,  84, 255 */
-  YELLOW       = 14, /* 255, 255,  84 */
-  WHITE        = 15  /* 255, 255, 255 */
-} COLOR_INDEX_T;
 static unsigned short def_r[] =
     { 0,   0,   0,   0, 172, 172, 172, 168,
      84,  84,  84,  84, 255, 255, 255, 255};
