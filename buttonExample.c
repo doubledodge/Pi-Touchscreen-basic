@@ -172,8 +172,8 @@ int main()
 	while(1){
                 getTouchSample(&rawX, &rawY, &rawPressure);
 
-                scaledX = rawX/scaleXvalue;
-                scaledY = rawY/scaleYvalue;
+                scaledX = 480 - rawY/scaleXvalue;
+                scaledY = rawX/scaleYvalue;
 
 
 

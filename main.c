@@ -100,8 +100,8 @@ int main()
 		Xaverage = Xaverage/SAMPLE_AMOUNT;
 		Yaverage = Yaverage/SAMPLE_AMOUNT;
 
-		scaledX = 	Xaverage / scaleXvalue;
-		scaledY = 	Yaverage / scaleYvalue;
+		scaledY = 	Xaverage / scaleYvalue;
+		scaledX = -1.0 * Yaverage / scaleXvalue;
 		drawSquare(scaledX, scaledY,5,5,WHITE);
 	}
 }
