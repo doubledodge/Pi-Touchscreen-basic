@@ -20,6 +20,17 @@
 #include <fcntl.h>
 #include <stdio.h>
 #include <signal.h>
+#include <unistd.h>
+#include <stdlib.h>
+
+// define the function prototypes called by main to avoid compiler warnings
+void closeFramebuffer();
+int framebufferInitialize(int *xres, int *yres);
+void getTouchSample(int *rawX, int *rawY, int *rawPressure);
+void getTouchScreenDetails(int *screenXmin,int *screenXmax,int *screenYmin,int *screenYmax);
+int openTouchScreen();
+void drawSquare(int x, int y,int height, int width,  int c);
+void put_string(int x, int y, char *s, unsigned colidx);
 
 // default framebuffer palette
 typedef enum {

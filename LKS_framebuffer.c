@@ -27,7 +27,7 @@
 #include <linux/fb.h>
 #include <sys/mman.h>
 #include "font_8x8.c"
-
+#include <unistd.h>
 
 #define KNRM  "\x1B[0m"
 #define KRED  "\x1B[31m"
@@ -44,6 +44,7 @@
 	char *fbp = 0;
 	int fb=0;
 	long int screensize = 0;
+	void put_string(int , int , char * , unsigned , uint8_t * );
 
 
 

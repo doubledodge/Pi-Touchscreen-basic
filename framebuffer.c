@@ -21,6 +21,7 @@
     Software Foundation, Inc., 59 Temple Place - Suite 330, Boston,
     MA 02111-1307, USA
 */
+#include <unistd.h>
 #include <stdlib.h>
 #include <linux/fb.h>
 #include <sys/mman.h>
@@ -42,7 +43,6 @@
 	char *fbp = 0;
 	int fb=0;
 	long int screensize = 0;
-
 
 
 static unsigned short def_r[] =

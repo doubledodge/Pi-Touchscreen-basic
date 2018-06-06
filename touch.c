@@ -23,6 +23,7 @@
 */
 #include "shared.h"
 #include "touch.h"
+#include <unistd.h>
 
 #define KWHT  "\x1B[37m"
 #define KYEL  "\x1B[33m"
