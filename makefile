@@ -1,3 +1,6 @@
+all: draw buttontest LKSdemo
+
+
 draw: main.o  touch.o framebuffer.o  
 	cc -o $@ $^ 
 

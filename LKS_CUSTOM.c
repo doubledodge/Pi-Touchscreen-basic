@@ -6,10 +6,12 @@
 #include <string.h>
 #include <fcntl.h>
 #include <stdio.h>
-//#include "touch.h"
-#include "touch.c"
+#include "touch.h"
+#include <unistd.h>
+#include <stdlib.h>
+#include "LKS_touch.c"
 #include "LKS_framebuffer.c"
-//#include <signal.h>
+#include <signal.h>
 
 #include <stdint.h>
 
